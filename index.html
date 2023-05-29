@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <title>HTML FORM</title>
+</head>
+<body>
+    <form action="#" method="get">
+    <!-- div que engloba todo -->
+    <div class="global">
+
+        <!-- div para el titulo -->
+        <div class="titulo"><h2>Payment for example</h2></div>
+
+        <!-- div para el error y la tarjeta de credito -->
+        <div class="errorytarjeta">
+        <div class="error"><p>Some fields are missing</p></div>
+
+        <!-- div para la tarjeta -->
+        <div class="tarjeta">
+            <div class="card">    
+                <label for="card" class="carduno"><b>Card #</b></label>
+                <br>
+                <input type="number" name="card" class="carddos" placeholder="XXXXXXXXXXXXXXXX">        
+            </div>
+            <div class="cvc">
+                <label for="cvc"><b>CVC #</b></label>
+                <br>
+                <input type="number" name="cvc" class="cvcuno" placeholder="0000">
+            </div>
+            <div class="amount">
+                <label for="amount"><b>Amount</b></label>
+                <div class="inputamount">
+                <p><b>$</b> </p><input type="number" name="amount" class="amountuno" placeholder="Amount"></div>
+            </div>
+        </div>
+        </div>
+
+        <!-- div datos personales -->
+
+        <div class="datospersonales">
+
+            <!-- div columna izquierda -->
+            <div class="datospersonales1">
+
+                <label for="First Name" class=""><b>First Name</b></label>
+                <br>
+                <input type="text" name="First Name" class="firstnameinput">
+                <div class="city">
+                <label for="City" class=""><b>City</b></label>
+                <br>
+                <input type="text" name="City" class="cityinput">
+                </div>
+
+                <div class="weaccept">
+                    <label for="weaccept"><b>We accept:</b></label>
+                    <div class="pagos">
+                    <input type="radio" name="weaccept" value="Mastercard">
+                    <label for="weaccept"><b><i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i></b></label>
+    
+                    <input type="radio" name="weaccept" value="Visa">
+                    <label for="weaccept"><b><i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i></b></label>
+
+                    <input type="radio" name="weaccept" value="Paypal">
+                    <label for="weaccept"><b><i class="fa-brands fa-cc-paypal" style="color: #ffffff;"></i></b></label>
+
+                    <input type="radio" name="weaccept" value="PaymentA">
+                    <label for="weaccept"><b><i class="fa-brands fa-cc-amazon-pay" style="color: #ffffff;"></i></b></label>
+                
+                    </div>
+                </div>
+            </div>
+
+            <!-- div columna derecha -->
+            <div class="datospersonales2">
+
+                <label for="Last Name" class=""><b>Last Name</b></label>
+                <br>
+                <input type="text" name="Last Name" class="lastnameinput">
+
+                <div class="stateypostal">
+                    <div class="state">
+                        <label for="state" class="state"><b>State</b></label>
+                        <br>
+                        <select name="select" class="stateinput">
+                            <option value="value1" selected>Pick a state</option>
+                            <option value="value2">Andalucia</option>
+                            <option value="value3">Madrid</option>
+                            <option value="value3">Cataluña</option>
+                          </select>
+                    </div>
+                    <div class="postal">
+                        <label for="postal" class="postal"><b>Postal Code</b></label>
+                        <br>
+                        <input type="number" name="postal" class="postalinput">
+                    </div>
+                </div>
+
+                <div class="message">
+                    <label for="messagetext"><b>Message</b></label>
+                    <br>
+					<textarea class="textarea" name="messagetext" ></textarea>
+                    <br>
+                    <p class="bajotextarea">Add any notes here.</p>
+                        
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BOTONES -->
+
+        <div class="botones">
+            
+            <input  type="reset" value="Cancel" class="buttoncancel" />
+            <input  type="submit" value="Send" class="buttonsubmit" />
+            
+        </div>
+    
+
+
+
+
+
+    </div>  
+</form>
+</body>
+</html>
